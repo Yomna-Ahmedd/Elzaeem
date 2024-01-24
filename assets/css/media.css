@@ -1,0 +1,54 @@
+@media (max-width: 992px){
+    /*start main page*/
+    /*start upperbar*/
+    .back-ground:before{
+        border-left: 122px solid transparent;
+        border-top: 122px solid var(--main--color);
+        left: -122px;
+    }
+    /*start navbar*/
+    .navbar-expand-lg{
+        margin-top: 0 !important;
+    }
+    .navbar-brand img{
+        width: 50% !important;
+    }
+    .navbar-expand-lg .navbar-nav{
+        width: auto !important
+    }
+    span.position-absolute.back-ground1.text-white.rounded-circle.d-flex.justify-content-center.align-items-center{
+        bottom: 5px !important;
+        right: 110px
+    }
+    /*start footer*/
+    footer .to-contact_us{
+        position: static !important;
+        bottom: 0;
+    }
+    footer .to-contact_us h4{
+        margin: 0!important;
+    }
+    footer .to-contact_us span{
+        margin: 0!important;
+    }
+    /*end main page*/
+    /*start page about us*/
+    .skitter{
+        height: 300px !important;
+    }
+    .skitter-clean .info_slide_dots{
+        background-color: var(--third--color) !important;
+        padding: 5px !important;
+    }
+    .skitter-clean .info_slide_dots .image_number{
+        width: 15px !important;
+        height: 15px !important;
+    }
+    /*end page about us*/
+    /*start page contact us*/
+    .contact-us .contact-info.border-right{
+        border-right: 0px solid #dee2e6 !important;
+    }
+    /*end page contact us*/
+
+}

@@ -1,0 +1,234 @@
+@import "style.css";
+
+:root{
+    --main--color: rgb(209, 7, 15);
+    --second--color: #fde0e073;
+    --third--color: #5e5757;
+}
+/*Start my claSS*/
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+hr{
+    border-top: 4px solid rgb(255, 255, 255);
+}
+input:focus{
+    border-color: #FFF;
+    outline-width: 0px;
+    background-color: var(--third--color);
+    color: #FFF;
+}
+button:focus{
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.button-effect{
+    cursor: pointer;
+    background-color: var(--main--color);
+    width: 300px;
+    border: none;
+    overflow: hidden
+}
+.button-effect.from-left span:first-child{
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: var(--second--color);
+    z-index: 1
+}
+.button-effect.from-left span:last-child{
+    position: relative;
+    z-index: 2;
+}
+.popup{
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none
+}
+.popup .inner{
+    background-color: #FFF;
+}
+.show-popup{
+    cursor: pointer;
+}
+.click{
+    cursor: pointer;
+}
+.back-ground1{
+    background-color: var(--main--color);
+}
+.back-ground2{
+    background-color: var(--third--color);
+}
+.back-ground3{
+    background-color: var(--second--color);
+}
+.my-price,
+.my-product,
+.my-text,
+.pout{
+    color: var(--main--color);
+}
+.text-active,
+.text-active:hover{
+    color: #FFF;
+    background-color: var(--main--color);
+}
+.text-one-dark{
+    color: #000
+}
+.my-shadow:hover{
+    box-shadow: -5px 10px 10px 0px #c06c6c;
+}
+.pout:hover,
+.text-one-dark:hover{
+    color: var(--main--color);
+}
+.transition-me{
+    -weebkit-transition: all 0.3s ease-in-out;
+    -noz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.my-title{
+    color: var(--main--color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px
+}
+.my-pragraph{
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-size: 19px
+}
+.my-icons{
+    font-size: 25px;
+    cursor: pointer;
+}
+.slide-icon{
+    font-size: 45px;
+    color: var(--third--color);
+}
+.slide-icon:hover{
+    color: var(--main--color);
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 15%
+}
+/*End my class*/
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto{
+    padding-right: 0;
+    padding-left: 0
+}
+/*start who are we*/
+.over-lay{
+    background-color: rgba(140, 90, 92, 0.5);
+    z-index: 5;
+    top: 0
+}
+.over-lay i{
+    font-size: 60px;
+    cursor: pointer;
+}
+/*end who are we*/
+/*start our product*/
+.product .card{cursor: pointer}
+.product .card .banc-up{
+    bottom: -64px;
+    opacity: 0
+}
+.product .card:hover .banc-up{
+    bottom: 0px;
+    opacity: 1
+}
+/*end our product*/
+/*start choose us & testimonials*/
+.choose-us,
+.testimonials{
+    background: url('../img/Why choose us bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -mpz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.choose-us .back-img span:last-child{font-size: 12px}
+.choose-us .back-img:hover{background-color: var(--main--color);}
+/*end choose us & testimonials*/
+/*start our branches*/
+.our-branches{
+    background: url('../img/bahrain-map.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -mpz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+}
+/*end our branches*/
+/*end main page*/
+/*start page product*/
+.pro-img a{color: #000;}
+.pro-img a:hover{color: var(--main--color)!important}
+/*end page product*/
+/*start page cart*/
+.two-2{height: 5px;}
+/*end page cart*/
+/*start page my-order*/
+.current-inside{display: none}
+.line{height: 5px}
+/*end page my-order*/
+/*start page about us*/
+.slid-about{
+    background: url('../img/gallery/85b52b4c-b790-41b0-8f7a-3805421ccaeb-Popeyes_Chicken_Sandwich.jfif') no-repeat center center;
+    -webkit-background-size: cover;
+    -mpz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 525px;
+}
+.skitter-clean .info_slide_dots{
+    background-color: var(--third--color) !important;
+    padding: 10px !important;
+}
+.skitter-clean .info_slide_dots .image_number{
+    width: 20px !important;
+    height: 20px !important;
+}
+.skitter-clean .info_slide_dots .image_number{
+    background-color: #FFF;
+}
+.skitter-clean .info_slide_dots .image_number.image_number_select,
+.skitter-clean .info_slide_dots .image_number:hover{
+    background-color: var(--main--color) !important;
+}
+/*end page about us*/
+/*start page contact us*/
+.slid-contact{
+    background: url('../img/staticmap.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -mpz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+.contact-us .contact-info.border-right{
+    border-right: 5px solid #dee2e6 !important;
+}
+/*end page contact us*/
+/*start page log in*/
+.log-in{
+    background: url('../img/Login bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -mpz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*end page log in*/
